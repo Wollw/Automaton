@@ -1,0 +1,53 @@
+body
+{
+	color: black;
+	text-align: center;
+	background-color: SaddleBrown;
+}
+
+input
+{
+	margin:2px;
+	background-color: Silver;
+}
+
+#config
+{
+	margin:0 auto;
+	font-size:12pt;
+	text-align:right;
+}
+
+#note
+{
+	font-size: 9pt;
+}
+
+#header
+{
+	display: inline-block;
+	text-align: center;
+	font-size: 24pt;
+	border: solid Black;
+	margin: 10px;
+	padding: 15px;
+	border-width: 1px;
+	background-color: DarkOliveGreen;
+}
+
+.sandbox
+{
+	display: inline-block;
+	text-align: center;
+	border: solid Black;
+	margin: 10px;
+	padding: 15px;
+	border-width: 1px;
+	background-color: DarkOliveGreen;
+}
+
+canvas
+{
+	border: solid Black;
+	border-width: 1px;
+}

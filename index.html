@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cellular Automaton</title>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/automaton.js"></script>
+		<script type="text/javascript" src="lib/main.js"></script>
+	</head>
+	<body onLoad="init();">
+			<div id="header">
+				Cellular Automaton
+			</div><br>
+			<!-- Container for this sandbox -->
+			<div id="jsEnabled" style="visibility:hidden" class="sandbox">
+
+				<!-- Display -->
+				<div>
+						<canvas id="petridish" width="640" height="480">
+							No canvas support found!
+						</canvas>
+				</div><br>
+				<div id="input">
+					<table id="config">
+						<tr>
+							<td>
+								Rules:
+							</td>
+							<td>
+								<input id="rulesString" size=8 type="text" value="B3/S23">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Live Color:
+							</td>
+							<td>
+								<input id="liveColor" size=8 type="text" value="Orange">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Dead Color:
+							</td>
+							<td>
+								<input id="deadColor" size=8 type="text" value="Black">
+							</td>
+						</tr>
+					</table>
+					<span id="note">Hex values work for colors too.</span><br>
+					<input id="pauseplay" type="button" onClick="pauseplayButton=true" value="Start">
+					<input id="save" type="button" onClick="saveButton=true" value="Save">
+					<input id="revert" type="button" onClick="revertButton=true" value="Revert"><br>
+					<input id="blank" type="button" onClick="blankButton=true" value="Blank">
+					<input id="randomize" type="button" onClick="randomizeButton=true" value="Randomize">
+				</div>
+				
+			</div>
+			<div id="jsDisabled" >
+				JavaScript must be enabled to access this page.<br>
+			</div>
+	</body>
+</html>

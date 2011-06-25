@@ -1,0 +1,1 @@
+This is a JavaScript implementation of a cellular automaton system.  Supports customs rules.  Requires jQuery be added to the lib folder or the index.html file's jquery be otherwise defined.
